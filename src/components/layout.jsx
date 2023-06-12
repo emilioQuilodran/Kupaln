@@ -1,9 +1,6 @@
 import styles from '../app/page.module.css'
 import '../app/globals.css'
 import Head from 'next/head';
-import Image from 'next/image';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 import Header from './Header';
 import { Inter } from 'next/font/google'
 

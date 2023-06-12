@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Form from '../components/form'
 import Footer from '@/components/Footer'
-const Teams = () => {
+const Teams = ({props}) => {
     return(
         <Layout>
             <Head>
