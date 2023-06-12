@@ -1,9 +1,9 @@
-import styles from '../app/page.module.css'
+import styles from '@/app/page.module.css'
 import Layout from '@/components/layout';
-import utils from '../styles/utils.module.css'
+import utils from '@/styles/utils.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
-import Form from '../components/form'
+import Form from '@/components/form'
 import Footer from '@/components/Footer'
 const Teams = ({props}) => {
     return(

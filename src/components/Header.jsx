@@ -25,7 +25,7 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link href={"/teams"}>
+                            <Link href={"/about-us"}>
                                 Sobre nosotros
                             </Link>
                         </li>
