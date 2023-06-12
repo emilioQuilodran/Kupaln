@@ -1,23 +1,19 @@
-import styles from '../app/page.module.css'
-import '../app/globals.css'
-import Head from 'next/head';
+"use client";
+import RootLayout from '@/app/layout';
 import Header from './Header';
-import { Inter } from 'next/font/google'
+import { ErrorBoundary } from "react-error-boundary";
 
-const inter = Inter({ subsets: ['latin'] })
-
-const name = 'Your Name';
-const Layout = ({children, home }) => {
+const Layout = ({children }) => {
     return(
-        <>
-            <Head>
-                <body className={inter.className} />
-            </Head>
-            <div className={styles.container}>
+        <ErrorBoundary fallback={
+            <p>Something went worng</p>
+        }>
+            <RootLayout>
                 <Header></Header>
                 {children}
-            </div>
-        </>
+            </RootLayout>
+            
+        </ErrorBoundary>
     )
 }
 

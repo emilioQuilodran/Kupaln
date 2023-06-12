@@ -1,4 +1,4 @@
-import styles from '../app/page.module.css'
+import styles from '../app/page.module.scss'
 import utils from '../styles/utils.module.css'
 
 const Form = () => {

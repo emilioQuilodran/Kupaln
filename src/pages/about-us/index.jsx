@@ -1,16 +1,14 @@
-import styles from '@/app/page.module.css'
-import Layout from '@/components/layout';
-import utils from '@/styles/utils.module.css'
-import Head from 'next/head'
+import '@/app/layout.module.scss'
+import styles from '@/app/page.module.scss'
 import Image from 'next/image'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
-const Teams = ({props}) => {
+import Layout from '@/components/layout';
+import '@/app/layout.module.scss'
+
+const Teams = () => {
     return(
         <Layout>
-            <Head>
-                <title>Kupaln: comercio exterior</title>
-            </Head>
             <section className={styles.teams}>
                 <div>
                     <Image

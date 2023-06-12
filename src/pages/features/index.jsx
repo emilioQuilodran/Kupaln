@@ -1,4 +1,4 @@
-import styles from '@/app/page.module.css'
+import styles from '@/app/page.module.scss'
 import Layout from '@/components/layout';
 
 const Features = ({props}) => {
