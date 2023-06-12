@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../app/page.module.css'
 import utils from '../styles/utils.module.css'
-import Layout, { siteTitle } from '../components/layout'
+import Layout, { siteTitle } from '@/components/layout'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
 
