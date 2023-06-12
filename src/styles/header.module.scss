@@ -1,0 +1,23 @@
+.header {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 5% auto;
+    position: relative;
+    z-index: 1;
+    nav ul {
+        list-style: none;
+        display: flex;
+        li {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width:680px) {
+        margin: 2% auto;
+    }
+}
