@@ -1,9 +1,14 @@
 "use client";
 import { ErrorBoundary } from "react-error-boundary";
+import Layout from "../components/layout";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <ErrorBoundary fallback={<div>Something went wrong</div>}>
+    <ErrorBoundary fallback={
+        <Layout>
+            <p>Something went worng</p>
+        </Layout>
+    }>
       <Component {...pageProps} />
     </ErrorBoundary>
   )
