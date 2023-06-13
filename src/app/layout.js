@@ -8,6 +8,8 @@ const inter = Inter({ subsets: ['latin'] })
     <html lang="es">
       <head>
         <title>Kupaln: comercio exterior</title>
+        <meta name="robots" content="all" />
+        <meta name='description' content='Ideal para Despachantes de Aduana, Agencias de Cargas, Compañias aéreas' />
       </head>
       <body className={`${inter.className} ${utils.body}`}>{children}</body>
     </html>
