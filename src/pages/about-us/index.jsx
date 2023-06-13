@@ -3,12 +3,17 @@ import styles from '@/app/page.module.scss'
 import Image from 'next/image'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
-import Layout from '@/components/layout';
 import '@/app/layout.module.scss'
+import Head from 'next/head'
+import utils from "../../app/layout.module.scss"
 
 const Teams = () => {
     return(
-        <Layout>
+        <div className={utils.noMargin}>
+            <Head>
+                <html lang='es' className={`${utils.body}`} />
+                <title>Kupaln comercio exterior</title>
+            </Head>
             <section className={styles.teams}>
                 <div>
                     <Image
@@ -41,7 +46,7 @@ const Teams = () => {
             </section>
             <Form />
             <Footer />
-        </Layout>
+        </div>
     )
 }
 

@@ -8,10 +8,10 @@ const Layout = ({children }) => {
         <ErrorBoundary fallback={
             <p>Something went worng</p>
         }>
-            <RootLayout>
+            <>
                 <Header></Header>
                 {children}
-            </RootLayout>
+            </>
             
         </ErrorBoundary>
     )
