@@ -4,16 +4,12 @@ import Image from 'next/image'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
 import '@/app/layout.module.scss'
-import Head from 'next/head'
-import utils from "../../app/layout.module.scss"
 
-const Teams = () => {
+import utils from "@/app/layout.module.scss"
+
+const Teams = ({props}) => {
     return(
         <div className={utils.noMargin}>
-            <Head>
-                <html lang='es' className={`${utils.body}`} />
-                <title>Kupaln comercio exterior</title>
-            </Head>
             <section className={styles.teams}>
                 <div>
                     <Image

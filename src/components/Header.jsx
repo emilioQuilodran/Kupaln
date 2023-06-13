@@ -1,20 +1,15 @@
-"use client";
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
-import Image from "next/image";
+'use client';
 import styles from '../styles/header.module.scss'
 import Link from "next/link";
 
 const Header = () => {
-    const router = useRouter();
-    const pathname = usePathname();
     return(
         <header className={styles.header}>
             <div>
-                <Link href={"/"}>
+                <a href={"/"}>
                     <h1>Küpaln</h1>
                     <h5>Comercio exterior</h5>
-                </Link>
+                </a>
                 {
                     /**
                      * <Image 
@@ -30,12 +25,14 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link href={"/about-us"}>
+                            <a href={"/about-us"}>
                                 Sobre nosotros
-                            </Link>
+                            </a>
                         </li>
-                        <li onClick={() => router.push('/features')}>
-                            Servicios
+                        <li>
+                            <a href={"/features"}>
+                                Sobre nosotros
+                            </a>
                         </li>
                         {
                             /**
@@ -43,9 +40,9 @@ const Header = () => {
                              */
                         }
                         <li>
-                            <Link href={"#subscribeForm"}>
+                            <a href={"#subscribeForm"}>
                                 Contactanos
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </nav>

@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-title-in-document-head */
 "use client";
 import RootLayout from '@/app/layout';
 import Header from './Header';
 import { ErrorBoundary } from "react-error-boundary";
-
 const Layout = ({children }) => {
     return(
         <ErrorBoundary fallback={
@@ -12,7 +12,6 @@ const Layout = ({children }) => {
                 <Header></Header>
                 {children}
             </>
-            
         </ErrorBoundary>
     )
 }
