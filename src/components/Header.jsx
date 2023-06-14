@@ -6,10 +6,10 @@ const Header = () => {
     return(
         <header className={styles.header}>
             <div>
-                <a href={"/"}>
+                <Link href={"/"}>
                     <h1>Küpaln</h1>
                     <h5>Comercio exterior</h5>
-                </a>
+                </Link>
                 {
                     /**
                      * <Image 
@@ -25,14 +25,14 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href={"/about-us"}>
-                                Sobre nosotros
-                            </a>
+                            <Link href={"/about-us"}>
+                                Nosotros
+                            </Link>
                         </li>
                         <li>
-                            <a href={"/features"}>
+                            <Link href={"/features"}>
                                 Servicios
-                            </a>
+                            </Link>
                         </li>
                         {
                             /**
@@ -40,9 +40,9 @@ const Header = () => {
                              */
                         }
                         <li>
-                            <a href={"#subscribeForm"}>
+                            <Link href={"#subscribeForm"}>
                                 Contactanos
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

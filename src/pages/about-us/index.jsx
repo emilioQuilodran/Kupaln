@@ -7,7 +7,7 @@ import '@/app/layout.module.scss'
 
 import utils from "@/app/layout.module.scss"
 
-const Teams = ({props}) => {
+const Teams = () => {
     return(
         <div className={utils.noMargin}>
             <section className={styles.teams}>

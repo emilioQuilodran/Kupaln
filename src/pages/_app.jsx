@@ -1,6 +1,6 @@
 "use client";
 import { ErrorBoundary } from "react-error-boundary";
-import Layout from "../components/layout";
+import Layout from "@/components/layout";
 import Head from 'next/head'
 import utils from "@/app/layout.module.scss"
 

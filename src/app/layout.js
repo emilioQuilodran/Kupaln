@@ -1,8 +1,5 @@
 
 import utils from './layout.module.scss'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
  function RootLayout({ children }) {
   return (
