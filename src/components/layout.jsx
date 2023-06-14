@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-title-in-document-head */
 "use client";
-import RootLayout from '@/app/layout';
 import Header from './Header';
+import utils from '@/app/layout.module.scss'
 import { ErrorBoundary } from "react-error-boundary";
 const Layout = ({children }) => {
     return(
@@ -10,7 +10,7 @@ const Layout = ({children }) => {
         }>
             <>
                 <Header></Header>
-                {children}
+                <div className={`${utils.noMargin}`}>{children}</div>
             </>
         </ErrorBoundary>
     )

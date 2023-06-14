@@ -3,7 +3,8 @@ import { ErrorBoundary } from "react-error-boundary";
 import Layout from "@/components/layout";
 
 const MyApp = ({ Component, pageProps }) => {
-  return (
+const getLayout = Component.getLayout ?? ((page) => page)
+  return getLayout(
     <ErrorBoundary fallback={
         <Layout>
           <p>Something went worng</p>

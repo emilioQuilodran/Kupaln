@@ -1,14 +1,23 @@
 import Image from 'next/image'
-import styles from '../app/page.module.scss'
-import utils from '../styles/utils.module.css'
+import styles from '@/app/page.module.scss'
+import layoutStyle from '@/app/layout.module.scss'
+import utils from '@/styles/utils.module.css'
 import Layout from '@/components/layout'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
+import Link from "next/link";
+import Head from 'next/head'
+
+
 const name = 'Kupaln';
 
 const Home = () => {
   return (
-    <Layout>
+    <>
+      <Head>
+          <html lang='es' className={`${layoutStyle.body}`} />
+          <title>Kupaln: comercio exterior</title>
+      </Head>
       <main className={styles.main}>
         <section className={styles.hero}>
           <Image 
@@ -19,7 +28,7 @@ const Home = () => {
           />
           <h2 className={styles.heroTitle}>Servicios integrales para el comercio exterior.</h2>
           <p>Somos un equipo de trabajo que tiene como mision ofrecer soluciones integrales a nuestros clientes del comercio exterior. Todo lo que necesitas en un solo proveedor.</p>
-          <a className={`${styles.btn} ${utils.greyShadow}`} href='#subscribeForm'>Comenzar</a>
+          <Link className={`${styles.btn} ${utils.greyShadow}`} href='#subscribeForm' replace>Comenzar</Link>
         </section>
         <section className={styles.features}>
           <h2>Ideal para Despachantes de Aduana, Agencias de Cargas, Compañias aéreas.</h2>
@@ -145,7 +154,7 @@ const Home = () => {
         <Form />
         <Footer />
       </main>
-    </Layout>
+    </>
     /**
      * <div className={styles.grid}>
           <a
