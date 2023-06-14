@@ -12,7 +12,7 @@ const Teams = () => {
             <Head>
                 <title>Kupaln: nosotros</title>
             </Head>
-            <div className={utils.noMargin}>
+            <div>
                 <section className={styles.teams}>
                     <div>
                         <Image

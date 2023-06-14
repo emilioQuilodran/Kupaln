@@ -84,6 +84,7 @@
   margin: 0 auto;
   position: relative;
   bottom: -29px;
+  z-index: 3;
 }
 
 .networks ul {
@@ -122,10 +123,20 @@
 .features article, .subscribeForm p {
   margin: 10% 0;
 }
+.features {
+  h2, div {
+    position: relative;
+  }
+}
 
 .features img {
   width: 55px;
   height: auto;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 .footer img {
@@ -270,7 +281,8 @@
 .hero::before,
 .hero::after {
   content: "";
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   left: 50%;
   min-width: 150vw;
   min-height: 210vw;
