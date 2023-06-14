@@ -1,11 +1,13 @@
 "use client";
-import Layout from "@/components/layout";
+import utils from '@/app/layout.module.scss'
+import Header from '../components/Header';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-      <Layout>
+      <div className={`${utils.body} ${utils.noMargin}`}>
+        <Header></Header>
         <Component {...pageProps}/>
-      </Layout>
+      </div>
   )
 }
  

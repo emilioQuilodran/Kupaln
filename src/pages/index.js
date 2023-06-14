@@ -1,24 +1,20 @@
 import Image from 'next/image'
 import styles from '@/app/page.module.scss'
-import layoutStyle from '@/app/layout.module.scss'
+import styleLay from '@/app/layout.module.scss'
 import utils from '@/styles/utils.module.css'
-import Layout from '@/components/layout'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
 import Link from "next/link";
 import Head from 'next/head'
+import Layout from '@/app/layout'
 
-
-const name = 'Kupaln';
-
-const Home = () => {
+const Home = ({data}) => {
   return (
-    <>
+    <div>
       <Head>
-          <html lang='es' className={`${layoutStyle.body}`} />
           <title>Kupaln: comercio exterior</title>
       </Head>
-      <main className={styles.main}>
+      <main className={`${styles.main} ${utils.noMargin}`}>
         <section className={styles.hero}>
           <Image 
               src="/images/illustration-intro.png"
@@ -154,7 +150,7 @@ const Home = () => {
         <Form />
         <Footer />
       </main>
-    </>
+    </div>
     /**
      * <div className={styles.grid}>
           <a
@@ -212,6 +208,6 @@ const Home = () => {
 }
 
 export default Home;
-export async function getStaticProps() {
-  return {props: {}};
+export async function getServerSideProps() {
+  return {props: {data: {}}};
 }

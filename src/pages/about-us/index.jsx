@@ -8,9 +8,8 @@ import utils from "@/app/layout.module.scss"
 
 const Teams = () => {
     return(
-        <>
+        <div>
             <Head>
-                <html lang='es' className={`${utils.body}`} />
                 <title>Kupaln: nosotros</title>
             </Head>
             <div className={utils.noMargin}>
@@ -47,7 +46,7 @@ const Teams = () => {
                 <Form />
                 <Footer />
             </div>
-        </>
+        </div>
     )
 }
 
