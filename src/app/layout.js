@@ -1,7 +1,7 @@
 
 import utils from './layout.module.scss'
 
- function RootLayout({ children }) {
+ const RootLayout = ({ children }) => {
   return (
     /*
     <html lang="es">
