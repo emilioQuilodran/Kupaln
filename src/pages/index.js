@@ -8,7 +8,7 @@ import Link from "next/link";
 import Head from 'next/head'
 
 const Home = ({data}) => {
-  let url = `https://wa.me/${process.env.NUMBER}?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
+  let url = `https://wa.me/541160300788?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
 
   return (
     <div>
