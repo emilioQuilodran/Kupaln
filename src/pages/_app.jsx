@@ -1,8 +1,6 @@
 "use client";
 import { ErrorBoundary } from "react-error-boundary";
 import Layout from "@/components/layout";
-import Head from 'next/head'
-import utils from "@/app/layout.module.scss"
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -12,9 +10,6 @@ const MyApp = ({ Component, pageProps }) => {
         </Layout>
     }>
       <Layout>
-        <Head>
-            <html lang='es' className={`${utils.body}`} />
-        </Head>
         <Component {...pageProps}/>
       </Layout>
     </ErrorBoundary>
