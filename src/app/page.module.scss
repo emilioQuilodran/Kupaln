@@ -110,6 +110,26 @@
   background: $action-cian;
 }
 
+
+.whatsapp {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 999;
+  .wpIcon {
+    z-index: 999;
+    display: inline-block;
+    background-image: url("/images/whatsapp-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+  }
+}
+
 .footer {
   text-align: justify;
   padding: 120px 25px 25px;

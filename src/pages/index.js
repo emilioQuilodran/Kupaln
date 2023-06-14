@@ -6,9 +6,10 @@ import Form from '@/components/form'
 import Footer from '@/components/Footer'
 import Link from "next/link";
 import Head from 'next/head'
-import Layout from '@/app/layout'
 
 const Home = ({data}) => {
+  let url = `https://wa.me/${process.env.NUMBER}?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
+
   return (
     <div>
       <Head>
@@ -94,6 +95,11 @@ const Home = ({data}) => {
             </article>
           </div>
         </section>
+        <div className={styles.whatsapp}>
+          <a target='_blank' href={url} className={utils.dartkShadow} style={{borderRadius: '50%'}}>
+            <span className={styles.wpIcon}></span>
+          </a>
+        </div>
         {
           /**
            * <section className={styles.testimonials}>
