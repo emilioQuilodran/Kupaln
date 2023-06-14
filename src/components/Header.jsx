@@ -31,7 +31,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a href={"/features"}>
-                                Sobre nosotros
+                                Servicios
                             </a>
                         </li>
                         {

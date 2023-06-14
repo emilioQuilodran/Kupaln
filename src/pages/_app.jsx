@@ -14,7 +14,6 @@ const MyApp = ({ Component, pageProps }) => {
       <Layout>
         <Head>
             <html lang='es' className={`${utils.body}`} />
-            <title>Kupaln comercio exterior</title>
         </Head>
         <Component {...pageProps}/>
       </Layout>
