@@ -8,7 +8,7 @@ import Link from "next/link";
 import Head from 'next/head'
 
 const Home = ({data}) => {
-  let url = `https://wa.me/541160300788?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
+  let url = `https://wa.me/541161448411?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
 
   return (
     <div>
@@ -32,18 +32,18 @@ const Home = ({data}) => {
           <div>
             <article>
               <Image 
-                  src="/images/icon-access-anywhere.svg"
-                  alt="icon access anywhere"
-                  width={66}
-                  height={60}
+                  src="/images/logistica.png"
+                  alt="Servicios Operativos"
+                  width={80}
+                  height={80}
               />
               <h4>Servicios Operativos</h4>
               <p>Nuestro equipo operativo se va a ocupar de todos los detalles, y nuestra atención personalizada va a lograr que esta experiencia trabajando sea única. (Despachos de aduana, Manifiestos de importación y Exportación, Tránsitos, Expedientes, etc.) Referencias a disposición.</p>
             </article>
             <article>
               <Image 
-                  src="/images/icon-security.svg"
-                  alt="icon-security"
+                  src="/images/internacional.png"
+                  alt="paqueteria internacional"
                   width={50}
                   height={64}
               />
@@ -52,8 +52,8 @@ const Home = ({data}) => {
             </article>
             <article>
               <Image 
-                  src="/images/icon-any-file.svg"
-                  alt="icon store"
+                  src="/images/promocion.png"
+                  alt="Marketing y Diseño"
                   width={70}
                   height={49}
               />
@@ -65,8 +65,8 @@ const Home = ({data}) => {
           <div>
             <article>
               <Image 
-                  src="/images/icon-access-anywhere.svg"
-                  alt="icon access anywhere"
+                  src="/images/consulta.png"
+                  alt="Asesoria Aduanera"
                   width={66}
                   height={60}
               />
@@ -75,8 +75,8 @@ const Home = ({data}) => {
             </article>
             <article>
               <Image 
-                  src="/images/icon-security.svg"
-                  alt="icon-security"
+                  src="/images/camion-de-reparto.png"
+                  alt="Mudanzas Internacionales"
                   width={50}
                   height={64}
               />
@@ -85,8 +85,8 @@ const Home = ({data}) => {
             </article>
             <article>
               <Image 
-                  src="/images/icon-any-file.svg"
-                  alt="icon store"
+                  src="/images/mascotas.png"
+                  alt="Mascotas al exterior"
                   width={70}
                   height={49}
               />

@@ -7,7 +7,7 @@ const Features = ({children}) => {
         <>
             <Head>
                 <html lang='es' className={`${utils.body}`} />
-                <title>Kupaln: servicios</title>
+                <title>Kupaln: que ofrecemos?</title>
             </Head>
             <div  className={utils.noMargin}>
                 <h1>Features page</h1>

@@ -5,11 +5,13 @@ const Form = () => {
     return(
         <section id='subscribeForm' className={styles.subscribeForm}>
           <div className={utils.dartkShadow}>
-            <h4>Get early access today</h4>
-            <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-            <form>
-              <input type='text' placeholder='example@gmail.com'></input>
-              <button className={styles.btn}>Get Started for free</button>
+            <h4>Contacto</h4>
+            <p>Contanos que proyecto tenes o tus dudas y la brevedad nos estaremos poniendo en contacto con vos</p>
+            <form className={utils.contactForm}>
+              <input type="text" name="name" id="name" placeholder='Nombre' className={utils.displayBlock} />
+              <input type='text' id='email' name='email' placeholder='example@gmail.com' className={utils.displayBlock} />
+              <textarea name="" id="" cols="30" rows="10" placeholder='Mensaje...' className={utils.displayBlock}></textarea>
+              <button className={styles.btn}>Enviar consulta</button>
             </form>
           </div>
         </section>

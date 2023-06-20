@@ -51,6 +51,10 @@
   color: #666;
 }
 
+.displayBlock {
+  display: block;
+}
+
 .displayF {
   display: flex;
   margin-top: 20px 0;
@@ -85,4 +89,18 @@
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.contactForm button {
+  margin-top: 0;
+  width: 60%;
 }

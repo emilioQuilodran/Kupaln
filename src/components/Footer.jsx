@@ -10,7 +10,7 @@ const Form = () => {
             <article className={styles.sitemap}>
               <div className={styles.location}>
                 <span className={styles.sitemapIconLocation}></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <p>Comercio xx123, Virrrey del Pino, la Matanza, Buenos Aires</p>
               </div>
               <div>
                 <ul className={utils.marginTopS}>
@@ -27,13 +27,10 @@ const Form = () => {
               <div>
                 <ul className={utils.marginTopS}>
                   <li>
-                    <p>About Us</p>
+                    <p>Sobre Nosotros</p>
                   </li>
                   <li>
-                    <p>Jobs</p>
-                  </li>
-                  <li>
-                    <p>Press</p>
+                    <p>Servicios</p>
                   </li>
                   <li>
                     <p>Blog</p>
@@ -43,13 +40,10 @@ const Form = () => {
               <div>
                 <ul className={utils.marginTopS}>
                   <li>
-                    <p>Contact Us</p>
+                    <p>Contactanos</p>
                   </li>
                   <li>
-                    <p>Terms</p>
-                  </li>
-                  <li>
-                    <p>Privacy</p>
+                    <p>Terminos y Condiciones</p>
                   </li>
                 </ul>
               </div>

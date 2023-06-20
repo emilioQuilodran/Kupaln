@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 'use client';
+import Image from 'next/image';
 import styles from '../styles/header.module.scss'
 import Link from "next/link";
 
@@ -10,8 +11,14 @@ const Header = () => {
                 <Link href={{
                     pathname: '/',
                 }}>
-                    <h1>Küpaln</h1>
-                    <h5>Comercio exterior</h5>
+                    <h1 className={styles.logoContent}>
+                        <Image
+                            src="/images/Kupaln-14.png"
+                            alt="Küpaln"
+                            width={430}
+                            height={260}
+                        /> 
+                    </h1>
                 </Link>
                 {
                     /**
