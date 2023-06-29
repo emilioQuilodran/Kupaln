@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '@/app/page.module.scss'
 import styleLay from '@/app/layout.module.scss'
-import utils from '@/styles/utils.module.css'
+import utils from '@/styles/utils.module.scss'
 import Form from '@/components/form'
 import Footer from '@/components/Footer'
 import Link from "next/link";
@@ -30,7 +30,7 @@ const Home = ({data}) => {
         <section className={styles.features}>
           <h2>Ideal para Despachantes de Aduana, Agencias de Cargas, Compañias aéreas.</h2>
           <div>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/logistica.png"
                   alt="Servicios Operativos"
@@ -40,17 +40,17 @@ const Home = ({data}) => {
               <h4>Servicios Operativos</h4>
               <p>Nuestro equipo operativo se va a ocupar de todos los detalles, y nuestra atención personalizada va a lograr que esta experiencia trabajando sea única. (Despachos de aduana, Manifiestos de importación y Exportación, Tránsitos, Expedientes, etc.) Referencias a disposición.</p>
             </article>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/internacional.png"
                   alt="paqueteria internacional"
                   width={50}
                   height={64}
               />
-              <h4>Paquetería Internacional</h4>
+              <h4>Envíos Internacional</h4>
               <p>¿Faltó adjuntar un certificado a la HAWB? ¿Tenés que enviar un documento a cualquier parte del mundo de manera urgente?. Contá con nosotros para traerte una solución.</p>
             </article>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/promocion.png"
                   alt="Marketing y Diseño"
@@ -63,7 +63,7 @@ const Home = ({data}) => {
           </div>
           <h2>Sos una Pyme o buscas emprender en el rubro ? También pensamos en vos.</h2>
           <div>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/consulta.png"
                   alt="Asesoria Aduanera"
@@ -73,7 +73,7 @@ const Home = ({data}) => {
               <h4>Asesoria Aduanera</h4>
               <p>¿Queres saber como exportar o importar a cualquier parte del mundo?. No dudes en contactarte , te brindaremos una atención personalizada hasta que puedas concretar tu importacion o tu envío.</p>
             </article>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/camion-de-reparto.png"
                   alt="Mudanzas Internacionales"
@@ -83,7 +83,7 @@ const Home = ({data}) => {
               <h4>Mudanzas Internacionales </h4>
               <p>Si te mudas, o te vas al exterior por trabajo, organizamos tu mudanza internacional logística y aduaneramente para que no tengas ningún problema.</p>
             </article>
-            <article>
+            <article className={`${styles.card} ${utils.greyShadow}`}>
               <Image 
                   src="/images/mascotas.png"
                   alt="Mascotas al exterior"
@@ -104,21 +104,6 @@ const Home = ({data}) => {
           /**
            * <section className={styles.testimonials}>
               <div>
-                <article className={`${styles.slot} ${utils.greyShadow}`}>
-                  <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-                  <div className={styles.slotContent}>
-                    <Image 
-                        src="/images/profile-1.jpg"
-                        alt="icon profile"
-                        width={25}
-                        height={25}
-                    />
-                    <div>
-                      <h5>Satish Patel</h5>
-                      <p>Founder & CEO, Huddle</p>
-                    </div>
-                  </div>
-                </article>
                 <article className={`${styles.slot} ${utils.greyShadow}`}>
                   <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
                   <div className={styles.slotContent}>
@@ -157,59 +142,6 @@ const Home = ({data}) => {
         <Footer />
       </main>
     </div>
-    /**
-     * <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL with Vercel.
-            </p>
-          </a>
-        </div>
-     */
   )
 }
 

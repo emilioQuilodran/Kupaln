@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from '../app/page.module.scss'
-import utils from '../styles/utils.module.css'
+import utils from '../styles/utils.module.scss'
 
 const Form = () => {
     return(

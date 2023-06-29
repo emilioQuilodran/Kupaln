@@ -30,7 +30,7 @@
   height: auto;
 }
 
-.teams, .features, .testimonials, .subscribeForm {
+.teams, .features, .testimonials {
   background: $dark-blue-main;
 }
 
@@ -77,10 +77,10 @@
 }
 
 .subscribeForm > div {
-  background: $dark-blue-su;
+  background: $grey;
   border-radius: 10px;
-  padding: 5% 10%;
-  width: 90%;
+  padding: 5%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   bottom: -29px;
@@ -146,6 +146,12 @@
 .features {
   h2, div {
     position: relative;
+  }
+  .card {
+    //background: $dark-blue-su;
+    background: $grey;
+    border-radius: 10px;
+    padding: 10% 5%;
   }
 }
 
@@ -259,7 +265,6 @@
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
 }
 
 .center {
@@ -348,6 +353,9 @@
   .hero p {
     margin: 0 auto;
     width: 55%;
+  }
+  .features {
+    padding-top: 0;
   }
   .features h2 {
     max-width: 780px;

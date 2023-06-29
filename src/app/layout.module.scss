@@ -31,15 +31,7 @@
 
 .body p {
   line-height: 1.5;
-}
-
-.body input, .body textarea {
-  background-color: $theme-white;
-  padding: 15px 5%;
-  width: 50%;
-  border: none;
-  border-radius: 20px;
-  color: $dark-grey;
+  opacity: 0.8;
 }
 
 .noMargin {
