@@ -6,15 +6,14 @@ import Form from '@/components/form'
 import Footer from '@/components/Footer'
 import Link from "next/link";
 import Head from 'next/head'
+import ReactGA from 'react-ga'
 
 const Home = ({data}) => {
   let url = `https://wa.me/541161448411?text=Hola,%20me%20gustaria%20hacer%20una%20consulta%20sobre...`
-
+  ReactGA.initialize('G-WJ5BM2BHKS')
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div>
-      {
-        console.log("google-ga initializated...")
-      }
       <Head>
           <title>Kupaln: comercio exterior</title>
       </Head>
