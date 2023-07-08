@@ -12,6 +12,9 @@ const Home = ({data}) => {
 
   return (
     <div>
+      {
+        console.log("google-ga initializated...")
+      }
       <Head>
           <title>Kupaln: comercio exterior</title>
       </Head>
