@@ -36,7 +36,7 @@ const Features = ({children}) => {
                             />
                             <h4>Plan Básico</h4>
                             <p>Sitios de una sola página. Son sitios con el fin de tener presencia en internet cuando se dispone de poco material.</p>
-                            <p className={`${commons.price}`}>$100.000</p>
+                            <p className={`${commons.price}`}>$125.000</p>
                         </article>
                         <article className={`${styles.card} ${utils.greyShadow}`}>
                             <Image 
@@ -47,7 +47,7 @@ const Features = ({children}) => {
                             />
                             <h4>Plan Estándar</h4>
                             <p>Sitios de hasta 4 / 5 páginas. Mientras más páginas tenga el sitio más contenido incluye y favorece al SEO.</p>
-                            <p className={`${commons.price}`}>$150.000</p>
+                            <p className={`${commons.price}`}>$175.000</p>
                         </article>
                         <article className={`${styles.card} ${utils.greyShadow}`}>
                             <Image 
@@ -58,7 +58,7 @@ const Features = ({children}) => {
                             />
                             <h4>Plan Premium</h4>
                             <p>Son sitios de hasta 5 o 6 secciones / páginas. Incluye un catálogo que puede contener productos, trabajos, etc.</p>
-                            <p className={`${commons.price}`}>$180.000</p>
+                            <p className={`${commons.price}`}>$225.000</p>
                         </article>
                     </div>
                     <div>
@@ -71,7 +71,7 @@ const Features = ({children}) => {
                             />
                             <h4>Plan E-commerce</h4>
                             <p>Son sitios de hasta 7, u 8 secciones / páginas. Incluye catálogo de productos con gestión de pedidos y venta online.</p>
-                            <p className={`${commons.price}`}>desde $200.000</p>
+                            <p className={`${commons.price}`}>desde $280.000</p>
                         </article>
                     </div>  
                 </section>

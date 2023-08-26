@@ -6,7 +6,8 @@ import Script from 'next/script'
 const MyApp = ({ Component, pageProps }) => {
   return (
       <>
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-WJ5BM2BHKS"/>
+      {/**
+       * <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-WJ5BM2BHKS"/>
         <Script
           id='google-analytics'
           strategy="afterInteractive"
@@ -21,6 +22,8 @@ const MyApp = ({ Component, pageProps }) => {
             `,
             }}
         />
+       */}
+        
         <div className={`${utils.body} ${utils.noMargin}`}>
           <Header></Header>
           <Component {...pageProps}/>

@@ -13,10 +13,10 @@ const Header = () => {
                 }}>
                     <h1 className={styles.logoContent}>
                         <Image
-                            src="/images/Kupaln-13.png"
+                            src="/images/Kupaln_blanco.png"
                             alt="Küpaln"
-                            width={430}
-                            height={260}
+                            width={640}
+                            height={640}
                         /> 
                     </h1>
                 </Link>
