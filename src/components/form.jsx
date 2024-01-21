@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../app/page.module.scss';
 import utils from '../styles/utils.module.scss';
+import axios from 'axios';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -19,33 +20,14 @@ const Form = () => {
     }
 
     setIsSubmitting(true);
-
     try {
-      // Enviar formulario por correo electrónico
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Error al enviar el formulario.');
+      const response = await axios.post('/api/send-email', { name, email, message });
+      if (response.status === 200) {
+        setSubmitSuccess(true);
       }
-
-      setSubmitSuccess(true);
-      setName('');
-      setEmail('');
-      setMessage('');
     } catch (error) {
-      setSubmitError(error.message);
-    } finally {
       setIsSubmitting(false);
+      setSubmitError('Error al enviar el correo electrónico');
     }
   };
 
@@ -93,7 +75,9 @@ const Form = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          {submitError && <p>{submitError}</p>}
+          {submitError && (
+            <><p style={{margin: '0'}}>{submitError}</p><p style={{margin: '0'}}>Si necesitas asistencia inmediata, puedes contactarnos a través de WhatsApp</p></>
+          )}
           {submitSuccess && <p>Mensaje enviado correctamente.</p>}
           <button type="submit" className={styles.btn} disabled={isSubmitting}>
             {isSubmitting ? 'Enviando...' : 'Enviar consulta'}

@@ -3,10 +3,9 @@ require('dotenv').config();
 
 const nextConfig = {
     env: {
-        APP_ID: process.env.APP_ID,
-        APP_SECRET: process.env.APP_SECRET,
-        VERIFY_TOKEN: process.env.VERIFY_TOKEN,
-        NUMBER: process.env.NUMBER
+        CLIENT_ID: process.env.CLIENT_ID,
+        SECRET_CLIENT: process.env.SECRET_CLIENT,
+        REDIRECT_URL: process.env.REDIRECT_URL,
     },
 }
 

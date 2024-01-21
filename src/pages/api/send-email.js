@@ -1,22 +1,38 @@
-import sendEmail from './sendMail';
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  console.log("enviando email...", req.body)
-  if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+  const { name, email, message } = req.body;
 
-    try {
-      // Envía el correo electrónico
-      await sendEmail(name, email, message);
+  try {
+    console.log("clientiD", process.env.CLIENT_ID)
+    console.log("clientSecret", process.env.SECRET_CLIENT)
+    console.log("refreshToken", process.env.REFRESH_TOKEN)
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        type: 'OAuth2',
+        user: email,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.SECRET_CLIENT,
+        refreshToken: process.env.REFRESH_TOKEN,
+      },
+      tls: {
+        rejectUnauthorized: false, // Desactivar la verificación del certificado SSL
+      },
+    });
 
-      // Envía una respuesta exitosa
-      res.status(200).end();
-    } catch (error) {
-      // Envía una respuesta de error
-      res.status(500).json({ error: 'Error al enviar el correo electrónico' });
-    }
-  } else {
-    // Envía una respuesta de error para solicitudes que no sean POST
-    res.status(404).end();
+
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_ADDRESS,
+      subject: 'Nuevo mensaje de contacto',
+      text: `Nombre: ${name}\nCorreo electrónico: ${email}\nMensaje: ${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.status(200).end();
+  } catch (error) {
+    console.error('Error al enviar el correo electrónico:', error);
+    res.status(500).json({ error: 'Error al enviar el correo electrónico' });
   }
 }
