@@ -76,7 +76,9 @@ const Features = ({children}) => {
                     </div>  
                 </section>
             </main>
-            <section style={{maxWidth: "800px", margin: "0 auto"}}>
+            {
+                /**
+                 * <section style={{maxWidth: "800px", margin: "0 auto"}}>
                 <h2>Caracteristicas incluidas en todos los planes</h2>
                 <ul>
                     <li>
@@ -97,6 +99,8 @@ const Features = ({children}) => {
                     </li>
                 </ul>
             </section>
+                 */
+            }
             <div className={styles.whatsapp}>
                 <a target='_blank' href={url} className={utils.dartkShadow} style={{borderRadius: '50%'}}>
                     <span className={styles.wpIcon}></span>

@@ -31,15 +31,6 @@ const Teams = () => {
                                 la determinación de concretar rápido y bien los emprendimientos que nos propongan; más un
                                 correcto uso de las nuevas tecnologías que la globalización e internet nos aportan, desarrollamos 
                                 la combinación adecuada para ser su proveedor de confianza y acompañarlos a seguir creciendo en este rubro fantástico. </p>
-                            <a className={styles.link} href=''>
-                                See how Fylo works
-                                <Image 
-                                    src="/images/icon-arrow.svg"
-                                    alt="arrow img"
-                                    width={14}
-                                    height={14}
-                                />
-                            </a>
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,7 @@
 import sendEmail from './sendMail';
 
 export default async function handler(req, res) {
+  console.log("enviando email...", req.body)
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
