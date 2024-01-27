@@ -10,17 +10,17 @@ const Form = () => {
             <article className={styles.sitemap}>
               <div className={styles.location}>
                 <span className={styles.sitemapIconLocation}></span>
-                <p>Comercio xx123, Virrrey del Pino, la Matanza, Buenos Aires</p>
+                <p>Autopista richieri, km 33,5, Aeropuerto Internacional Ezeiza, Buenos Aires</p>
               </div>
               <div>
                 <ul className={utils.marginTopS}>
                   <li className={utils.displayF}>
                     <span className={styles.sitemapIconPhone}></span>
-                    <p className={utils.marginLeftS}>+1-543-123-4567</p>
+                    <p className={utils.marginLeftS}>1161448411</p>
                   </li>
                   <li className={utils.displayF}>
                     <span className={styles.sitemapIconEmail}></span>
-                    <p className={utils.marginLeftS}>example@fylo.com</p>
+                    <p className={utils.marginLeftS}>consultas@kupaln.com</p>
                   </li>
                 </ul>
               </div>
@@ -28,9 +28,6 @@ const Form = () => {
                 <ul className={utils.marginTopS}>
                   <li>
                     <p>Sobre Nosotros</p>
-                  </li>
-                  <li>
-                    <p>Servicios</p>
                   </li>
                   <li>
                     <p>Blog</p>
